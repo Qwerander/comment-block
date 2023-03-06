@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Bloсk</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script defer src="./js/just-validate.min.js"></script>
+    <script defer src="./js/index.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">
+                Блок с комментариями
+            </h1>
+        </div>
+    </header>
+    <section class="section">
+        <div class="container">
+            <div class="comments">
+                <ul class="list" id="comments-list">
+
+                </ul>
+            </div>
+            <form class="form" id="form">
+                <label class="form__label">
+                    <span class="form__error" id="textarea-error">
+                        Введите минимум 2 символа
+                    </span>
+                    <textarea class="form__input form__textarea" type="text" name="comment" id="comment" placeholder="Введите комментарий*"></textarea>
+                </label>
+                <label class="form__label">
+                    <span class="form__error" id="input-error">
+                        Введите минимум 2 символа
+                    </span>
+                    <input class="form__input" type="text" name="name" id="name" placeholder="Введите имя*">
+                </label>
+                <label class="form__label">
+                    <input class="form__input" type="date" name="date" id="date">
+                </label>
+                <button class="form__btn btn-reset">
+                    Отправить
+                </button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
